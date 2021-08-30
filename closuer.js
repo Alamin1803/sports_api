@@ -14,10 +14,11 @@ const getTeam=data=>{
     data.forEach(element => {
         console.log(element)
         const div= document.createElement('div');
+        div.classList.add('divy');
         div.innerHTML= `<img src='${element.strTeamBadge}'
-        <h2>Teamsname:${element.strTeam}</h2>
-        <h2>league:${element.strLeague}</h2>
-        <h2>Teamsname:${element.strCountry}</h2>
+        <h1>Teams Name: ${element.strTeam}</h1>
+        <h4>League: ${element.strLeague}</h4>
+        <h4>Country name:${element.strCountry}</h4>
 
         `
         container.appendChild(div)
